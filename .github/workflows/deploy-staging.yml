@@ -3,7 +3,7 @@ name: Staging Deploy
 on: [workflow_dispatch]
 
 jobs:
-  Staging Deploy:
+  STAGING_DEPLOY:
     runs-on: ubuntu-latest
 
     env:
