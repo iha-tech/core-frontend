@@ -1,0 +1,10 @@
+name: Test env
+
+on: [workflow_dispatch]
+
+jobs:
+  STAGING_DEPLOY:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "🤞 ${{ secrets.S3_BUCKET_REGION }}"
