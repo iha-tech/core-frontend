@@ -1,0 +1,6 @@
+name: Deploy Staging
+on: [push]
+jobs:
+  - name: Setup
+    steps:
+      - run:  echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
