@@ -4,6 +4,8 @@ on: [workflow_dispatch]
 
 jobs:
   STAGING_DEPLOY:
+    environment: staging
+
     runs-on: ubuntu-latest
 
     steps:
