@@ -6,6 +6,7 @@ on:
 
 jobs:
   Setup:
+    runs-on: ubuntu-latest
     steps:
       - name: Setup | Start
         run:  echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
