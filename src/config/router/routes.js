@@ -2,9 +2,9 @@ const Public = () => import('@/views/Public.vue')
 const Private = () => import('@/views/Private.vue')
 
 export default [{
-  path: '',
+  path: '/',
   component: Public
 }, {
-  path: 'shush',
+  path: '/shush',
   component: Private
 }]
