@@ -12,7 +12,7 @@
           </template>
 
           <template #default>
-            <component :is="Component"></component>
+            <component :is="Component" />
           </template>
         </suspense>
       </transition>
