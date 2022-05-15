@@ -1,4 +1,4 @@
-name: Package and commit
+name: Update package-lock.json
 
 on: [workflow_dispatch]
 
@@ -9,10 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "🤞 Package and commit job is starting!"
+      - run: echo "🤞 Update package-lock.json job is starting!"
 
       - name: Checkout to branch
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: npm install
