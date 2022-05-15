@@ -1,6 +1,6 @@
-import { VueRouter } from 'vue-router'
+import { createRouter } from 'vue-router'
 import routes from './routes'
 
-export default VueRouter.createRouter({
+export default createRouter({
   routes
 })
