@@ -17,7 +17,7 @@
         Want to know more about me?
       </p>
 
-      <router-link :to="{ name: 'Home' }">
+      <router-link :to="{ name: 'AboutMe' }">
         Go to About Me
       </router-link>
     </section>
