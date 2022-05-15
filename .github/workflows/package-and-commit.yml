@@ -23,4 +23,3 @@ jobs:
           add: package-lock.json
           message: "deps: update package-lock.json"
           new_branch: update-package-lock
-          push: true
