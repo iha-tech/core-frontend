@@ -1,0 +1,26 @@
+name: Package and commit
+
+on: [workflow_dispatch]
+
+jobs:
+  PACKAGE_AND_COMMIT:
+    environment: staging
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Package and commit job is starting!"
+
+      - name: Checkout to branch
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Commit package-lock.json
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: package-lock.json
+          message: "deps: update package-lock.json"
+          new_branch: update-package-lock
+          push: true
