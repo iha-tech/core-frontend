@@ -5,15 +5,15 @@
 <template>
   <router-view v-slot="{ Component }">
     <transition name="fade" mode="out-in">
-      <suspense>
+      <!-- <suspense>
         <template #fallback>
           <view-loading />
         </template>
 
-        <template #default>
+        <template #default> -->
           <component :is="Component"></component>
-        </template>
-      </suspense>
+        <!-- </template>
+      </suspense> -->
     </transition>
   </router-view>
 </template>
