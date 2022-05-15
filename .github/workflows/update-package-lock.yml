@@ -13,8 +13,12 @@ jobs:
 
       - name: Checkout to branch
         uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version-file: '.node-version'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
@@ -23,5 +27,5 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: package-lock.json
-          message: "deps: update package-lock.json"
+          message: "chore: update package-lock.json"
           new_branch: update-package-lock
