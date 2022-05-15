@@ -18,6 +18,6 @@
   </router-view>
 </template>
 
-<style lang="scss" scoped>
-  @use '@/assets/partials/animations.module';
+<style lang="scss">
+  @use '@/assets/partials/animations';
 </style>
