@@ -1,10 +1,10 @@
-const Public = () => import('@/views/Public.vue')
-const Private = () => import('@/views/Private.vue')
+import publicRoutes from './public'
 
 export default [{
   path: '/',
-  component: Public
+  component: () => import('@/views/Public.vue'),
+  children: publicRoutes
 }, {
   path: '/shush',
-  component: Private
+  component: () => import('@/views/Private.vue')
 }]
