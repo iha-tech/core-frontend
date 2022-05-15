@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <router-view v-slot="{ Component, route }">
+  <router-view v-slot="{ Component }">
     <transition name="fade" mode="out-in">
       <suspense>
         <template #fallback>
@@ -11,10 +11,7 @@
         </template>
 
         <template #default>
-          <component
-            :is="Component"
-            :key="route.path"
-          />
+          <component :is="Component" />
         </template>
       </suspense>
     </transition>
