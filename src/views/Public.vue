@@ -1,5 +1,5 @@
 <script setup>
-  import ViewLoading from './components/ViewLoading.vue'
+  import ViewLoading from '@/components/ViewLoading.vue'
 </script>
 
 <template>
