@@ -5,8 +5,8 @@
 <template>
   <main>
     <router-view v-slot="{ Component }">
-      <!-- <transition name="fade" mode="out-in">
-        <suspense>
+      <transition name="fade" mode="out-in">
+        <!-- <suspense>
           <template #fallback>
             <view-loading />
           </template>
@@ -16,8 +16,8 @@
     
             <component :is="Component"></component>
           <!-- </template>
-        </suspense>
-      </transition> -->
+        </suspense> -->
+      </transition>
     </router-view>
   </main>
 </template>
