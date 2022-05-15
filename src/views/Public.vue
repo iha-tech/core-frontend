@@ -19,5 +19,5 @@
 </template>
 
 <style lang="scss" scoped>
-  @use '@/assets/partials/animations';
+  @use '@/assets/partials/animations.module';
 </style>
