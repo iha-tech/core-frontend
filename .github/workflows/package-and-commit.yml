@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Package and commit job is starting!"
+      - run: echo "🤞 Package and commit job is starting!"
 
       - name: Checkout to branch
         uses: actions/checkout@v3
