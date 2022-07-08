@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <main>
+  <div>
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <suspense>
@@ -17,7 +17,7 @@
         </suspense>
       </transition>
     </router-view>
-  </main>
+  </div>
 </template>
 
 <style lang="scss">
