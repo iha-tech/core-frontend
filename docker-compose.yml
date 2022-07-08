@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    environment:
+      FROTEND_PORT: 3000
+    volumes:
+      - .:/home/gustavoiha/personal/iha-tech/core-frontend/
+    ports:
+      - "5000:3000"
+      - "3001:3001"
