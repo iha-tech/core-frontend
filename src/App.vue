@@ -21,5 +21,5 @@
 </template>
 
 <style lang="scss">
-  @use '@/assets/partials/animations';
+  @use '@/styles/partials/animations';
 </style>
